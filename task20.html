@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+  </head>
+  <style>
+
+    #container{
+           display: flex;
+           flex-direction:row;
+           flex-wrap: wrap;
+           gap: 10px;
+           align-items: center;
+           margin-left: 250px;
+           padding-left: 150px;
+           width: 1600px;
+           align-self: center;
+           justify-content: center;
+
+    }
+        .day{
+            width: 200px;
+        height:100px;
+        border: 5px solid pink;
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: xx-large;
+        color: darkgreen;
+        font-weight:bold;
+    }
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        text-align: center;
+        font-size: xx-large;
+        background-color: azure;
+        background-image: url('https://previews.123rf.com/images/stillfx/stillfx1008/stillfx100800335/7617495-clock-face-and-calendar-on-color-background.jpg?fj=1');
+        background-repeat: no-repeat;
+        background-size: 100% 120%;
+    }
+    .Advertisement{
+        display: flex;
+
+    }
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 150px;
+    }
+    .main1{
+        display: flex;
+        flex-direction: column;
+    }
+    .main1 h1{
+        margin-left: 400px;
+    }
+    h1{
+        color:rgb(26, 164, 136);
+        font: size 250px;
+    }
+    .main p{
+        font-family:serif;
+    }
+  </style>
+
+  <body>
+    <div class="main">
+      <div class="main1">
+        <div><h1>December 2023</h1></div>
+
+        <div id="container">
+          <div class="day">Monday</div>
+          <div class="day">Tuesday</div>
+          <div class="day">Wednesday</div>
+          <div class="day">Thrusday</div>
+          <div class="day">Friday</div>
+          <div class="day">Saturday</div>
+          <div class="day">Sunday</div>
+          <div class="day"></div>
+          <div class="day"></div>
+          <div class="day"></div>
+          <div class="day"></div>
+          <div class="day">1</div>
+          <div class="day">2</div>
+          <div class="day">3</div>
+          <div class="day">4</div>
+          <div class="day">5</div>
+          <div class="day">6</div>
+          <div class="day">7</div>
+          <div class="day">8</div>
+          <div class="day">9</div>
+          <div class="day">10</div>
+          <div class="day">11</div>
+          <div class="day">12</div>
+          <div class="day">13</div>
+          <div class="day">14</div>
+          <div class="day">15</div>
+          <div class="day">16</div>
+          <div class="day">17</div>
+          <div class="day">18</div>
+          <div class="day">19</div>
+          <div class="day">20</div>
+          <div class="day">21</div>
+          <div class="day">22</div>
+          <div class="day">23</div>
+          <div class="day">24</div>
+          <div class="day">25</div>
+          <div class="day">27</div>
+          <div class="day">28</div>
+          <div class="day">29</div>
+          <div class="day">30</div>
+          <div class="day">31</div>
+          <div class="day">*</div>
+        </div>
+      </div>
+      <div>
+        <img
+          src="data:image/jpeg;base64,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"
+          width = 1100
+          height = 1000
+        />
+        <p style="color: yellow">
+          December Tourism is generally focused on the coastal areas of Goa,
+          with lower tourist activity inland. In 2010, there were more than 2
+          million tourists reported to have visited Goa, about 1.2 million of
+          whom were from abroad
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
