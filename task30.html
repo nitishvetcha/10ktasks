@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding : 20px 30px 20px 30px;
+            border:2px solid darkblue;
+            border-radius: 30px;
+            background-color: rgb(67, 67, 150);
+            margin-top:50%;
+            margin-left:50%;
+        }
+        body{
+            background-color: lightslategray;
+        }
+        button{
+          animation-name: effect;
+          animation-iteration-count: infinite;
+          animation-duration: 7s;
+        }
+        @keyframes effect{
+            25%{
+                box-shadow:-2px -2px 2px 2px rgba(87, 87, 160,0.532), -2px 2px 2px 2px rgba(87, 87, 160,0.532) , -2px -2px 2px 2px rgba(87, 87, 160,0.532), 2px 2px -2px 2px rgba(87, 87, 160,0.532);
+            }
+            50%{
+                box-shadow: -3px -3px 3px 3px rgba(82,82,169,0.532), -3px 3px 3px 3px rgba(82,82,169,0.532),  -3px -3px 3px 3px rgba(82,82,169,0.532),3px 3px -3px 3px rgba(82,82,169,0.532);
+            }
+            75%{
+                box-shadow: -4px -4px 4px 4px rgba(72, 72, 174, 0.532), -4px 4px 4px 4px rgba(72, 72, 174, 0.532),  -4px -4px 4px 4px rgba(72, 72, 174, 0.532),4px 4px 4px 4px rgba(72, 72, 174, 0.532);
+            }
+        }
+    </style>
+</head>
+<body>
+    <button>click me</button>
+</body>
+</html>
