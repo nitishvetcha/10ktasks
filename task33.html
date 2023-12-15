@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SquareoffBots</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./bootstrap/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <Style>
+    body{
+        overflow-x:hidden;
+        overflow-y:visible;
+        display:block;
+        position:absolute;
+
+    }
+    .i1{
+        margin-left: 200px;
+    }
+    .btn-success{
+        box-shadow:2px 2px black;
+        padding:10px;
+    }
+    .button{
+        position : absolute;
+        top :300px;
+    }
+    .r1{
+        position: relative;
+        border:0px solid rgb(10, 10, 95);
+        padding:10px;
+        top:-490px;
+        left:200px;
+        border-radius: 50px;
+        text-decoration: none;
+        color:black;
+        background-image: linear-gradient(to right,rgb(48, 130, 110), rgb(22, 68, 142));
+    }
+    .r2{
+        position:relative;
+        top:-470px;
+        left:200px;
+        font-size: xxx-large;
+        color:white;
+    }
+    .r3{
+        position:relative;
+        top:-470px;
+        left:200px;
+        font-size: xxx-large;
+        color:white;
+    }
+    .r4{
+        position:relative;
+        top:-445px;
+        left:200px;
+        color:white;
+        font-size:x-large;
+    }
+    .nav-link{
+        color:white;
+    }
+    .navbar1 {
+        background-color: rgb(12, 1, 12);
+        height:auto;
+        list-style-type: none;
+        padding: 0px 0px 0px 0px;
+        border-radius: 40px;
+        box-shadow: 0px 4px;
+    }
+    .navbar1 {
+        position:fixed;
+        top:250px;
+        left:50px;
+    }
+   .navbar1 a {
+        display:block;
+        padding:10px;
+        text-align: center;
+    }
+    .r5{
+        position: relative;
+        border:0px solid rgb(10, 10, 95);
+        padding:10px;
+        top:-420px;
+        left:200px;
+        border-radius: 50px;
+        text-decoration: none;
+        color:black;
+        background-image: linear-gradient(to right,rgb(48, 130, 110), rgb(22, 68, 142));
+    }
+    .r6{
+        position: relative;
+        border:0px solid rgb(10, 10, 95);
+        padding:10px;
+        top:-390px;
+        left:200px;
+        border-radius: 50px;
+        text-decoration: none;
+        color:black;
+        background-image: linear-gradient(to right,rgb(48, 130, 110), rgb(22, 68, 142));
+    }
+    .r7{
+        position: relative;
+        top:-200px;
+        left:650px;
+        border-radius: 50px;
+        color:black;
+    }
+    .r8{
+        position:absolute;
+        top:820px;
+        left:400px;
+        border-radius: 50px;
+        color:black;
+    }
+    .r9{
+        position:absolute;
+        top:890px;
+        left:460px;
+        font-size:medium;
+        border-radius: 50px;
+        color:black;
+    }
+    .r10{
+        position:absolute;
+        top:1900px;
+        left:720px;
+        border-radius: 50px;
+        color:black;
+    }
+    .r11{
+        position:absolute;
+        top:1950px;
+        left:500px;
+        border-radius: 50px;
+        color:black;
+    }
+    .r12{
+        position:absolute;
+        top:2020px;
+        left:450px;
+        font-size:medium;
+        border-radius: 50px;
+        color:black;
+    }
+    .r13{
+        position:absolute;
+        top:2550px;
+        left:720px;
+        border-radius: 50px;
+        color:black;
+    }
+    .r14{
+        position:absolute;
+        top:2600px;
+        left:520px;
+        border-radius: 50px;
+        color:black;
+    }
+    .r15{
+        position:absolute;
+        top:2650px;
+        left:470px;
+        font-size:medium;
+        border-radius: 50px;
+        color:black;
+    }
+    .r16{
+        position: absolute;
+        border:0px solid rgb(10, 10, 95);
+        padding:10px;
+        top:5560px;
+        left:170px;
+        border-radius: 50px;
+        text-decoration: none;
+        color:black;
+        background-image: linear-gradient(to right,rgb(48, 130, 110), rgb(22, 68, 142));
+    }
+    .a1{
+        width:200px;
+        height:220px;
+        position:absolute;
+        top:1000px;
+        left:350px;
+    }
+    .b1{
+        position:absolute;
+        left:65px;
+        border-radius:30px;
+    }
+    .a2{
+        width:200px;
+        height:220px;
+        position:absolute;
+        top:1000px;
+        left:650px;
+    }
+    .b2{
+        position:absolute;
+        left:65px;
+        border-radius:30px;
+    }
+    .a3{
+        width:200px;
+        height:220px;
+        position:absolute;
+        top:1000px;
+        left:950px;
+    }
+    .b3{
+        position:absolute;
+        left:65px;
+        border-radius:30px;
+    }
+    .a4{
+        width:200px;
+        height:220px;
+        position:absolute;
+        top:1300px;
+        left:350px;
+    }
+    .b4{
+        position:absolute;
+        left:65px;
+        border-radius:30px;
+    }
+    .a5{
+        width:200px;
+        height:220px;
+        position:absolute;
+        top:1300px;
+        left:650px;
+    }
+    .b5{
+        position:absolute;
+        left:65px;
+        border-radius:30px;
+    }
+    .a6{
+        width:200px;
+        height:220px;
+        position:absolute;
+        top:1300px;
+        left:950px;
+    }
+    .b6{
+        position:absolute;
+        left:65px;
+        border-radius:30px;
+    }
+    .a7{
+        width:200px;
+        height:220px;
+        position:absolute;
+        top:1600px;
+        left:650px;
+    }
+    .b7{
+        position:absolute;
+        left:65px;
+        border-radius:30px;
+    }
+    .n1{
+       position:absolute;
+       width:500px;
+       font-weight: bolder;
+       top:1855px;
+       left:200px;
+       
+    }
+    .n2{
+       position:absolute;
+       font-weight: bolder;
+       top:1845px;
+       left:705px;
+       
+    }
+    .n3{
+       position:absolute;
+       width:500px;
+       font-weight: bolder;
+       top:1855px;
+       left:765px;
+       
+    }
+    .n4{
+       position:absolute;
+       width:100%;
+       top:2475px;      
+    }
+    .a8{ 
+        position:absolute;
+        top:2100px;
+        left:350px;
+    }
+    .b8{
+        position:absolute;
+        left:25px;
+    }
+    .a9{ 
+        position:absolute;
+        top:2100px;
+        left:550px;
+    }
+    .b9{
+        position:absolute;
+        left:25px;
+    }
+    .a10{ 
+        position:absolute;
+        top:2100px;
+        left:750px;
+    }
+    .b10{
+        position:absolute;
+        left:25px;
+    }
+    .a11{ 
+        position:absolute;
+        top:2100px;
+        left:950px;
+    }
+    .b11{
+        position:absolute;
+        left:25px;
+    }
+    .e1{
+        height:300px;
+        width:450px;
+        position:absolute;
+        top:-20px;
+        left:30px;
+        border-radius:20px;
+
+    }
+    .e2{
+        border:1px solid rgb(0, 106, 255);
+        padding:10px;
+        height:300px;
+        width:510px;
+        position:absolute;
+        top:2750px;
+        left:250px;
+        border-radius:20px;
+    }    .c1{
+        position:absolute;
+        left:60px;
+        top:2px;
+    }
+    .c2{
+        position:absolute;
+        left:60px;
+        top:30px;
+    }
+    .c3{
+        position:absolute;
+        top:2800px;
+        left:850px;
+    }
+    .c4{
+        position:absolute;
+        top:2900px;
+        left:850px;
+    }
+    .w1{
+        position:absolute;
+        top:3150px;
+        left:720px;
+    }
+    .w2{
+        position:absolute;
+        top:3200px;
+        left:600px;
+    }
+    .w3{
+        position:absolute;
+        top:3250px;
+        left:520px;
+    }
+    .w4{
+        position:absolute;
+        top:3300px;
+        left:200px;
+    }
+    .w5{
+        position:absolute;
+        top:3300px;
+        left:600px;
+    }
+    .w6{
+        position:absolute;
+        top:3300px;
+        left:1000px;
+    }
+    .w7{
+        position:absolute;
+        top:3900px;
+        left:200px;
+    }
+    .w8{
+        position:absolute;
+        top:4000px;
+        left:850px;
+    }
+    .w9{
+        position:absolute;
+        top:3950px;
+        left:850px;
+    }
+    .w10{
+        position:absolute;
+        top:4050px;
+        left:850px;
+        font-size: medium;
+    }
+    .w11{
+        position:absolute;
+        top:4400px;
+        left:850px;
+    }
+    .w12{
+        position:absolute;
+        top:4550px;
+        left:200px;
+    }
+    .w13{
+        position:absolute;
+        top:4600px;
+        left:200px;
+    }
+    .w14{
+        position:absolute;
+        top:4650px;
+        left:200px;
+        font-size: medium;
+    }
+    .w15{
+        position:absolute;
+        top:4900px;
+        left:750px;
+    }
+    .w16{
+        position:absolute;
+        top:4950px;
+        left:550px;
+    }
+    .w17{
+        position:absolute;
+        top:5000px;
+        left:650px;
+        font-size:medium;
+    }
+    .w18{
+        position:absolute;
+        top:5050px;
+        left:900px;
+    }  
+   .w19{
+       width:700px;
+       position:absolute;
+       top:5100px;
+       left:150px;
+   }
+    .w38{
+        background-color: blue;
+        height: 180px;
+        width:1520px;
+        position:absolute;
+        top:5650px;
+        padding-left:130px;
+        padding-top:20px;
+    }
+    .w38 h5{
+        color:white;
+    }
+    .w38 pre{
+        color: grey;
+    }
+    .w38 i{
+        color:white;
+    }
+    .w39{
+        height: 150px;
+        width:1488px;
+        position:absolute;
+        top:10px;
+        left:550px;
+        padding-left:130px;
+        padding-top:20px;
+        list-style-type: none;
+    }
+    .w39 .w40{
+        color:white;
+        height: 150px;
+        width:1488px;
+        position:absolute;
+        top:-20px;
+        left:0px;
+        padding-left:130px;
+        padding-top:20px;
+        list-style-type: none;
+    }
+    .w39 li{
+        color:grey;
+    }
+    .w41{
+        height: 150px;
+        width:1488px;
+        position:absolute;
+        top:-10px;
+        left:800px;
+        padding-left:130px;
+        padding-top:20px;
+        list-style-type: none;
+    }
+    .w41 .w42{
+        color:white;
+    }
+    .w41 li{
+        color:grey;
+    }
+    .s{
+        background-image:url(./Images/sqaureoffbot1.jpg);
+        background-repeat: no-repeat;
+        background-size: 1520px 110px;
+    }
+    .s1{
+        position:absolute;
+        top:210px;
+        left:900px;
+    }
+    .navbar{
+        position:fixed;
+        width:1520px;
+    }
+    .l1{
+        position:fixed;
+        top:30px;
+        left:1000px;
+    }
+    .l2{
+        position:fixed;
+        top:35px;
+        left:1150px;
+    }
+    .l3{
+        position:fixed;
+        top:35px;
+        left:1250px;
+    }
+    </style>
+</head>
+<body>
+    <img class="s1" src="./Images/trading.jpg" height="400px" width="400px"/>
+    <img src="./Images/sqaureoffbot.jpg" width="1520px" height="717px"/>
+    <nav class="navbar border-bottom fixed-top s "style="width:1488;">
+        <a class="navbar-brand i1" href="#"><img src="./Images/sqaureoffbotlogo.jpg"height="80px" width="200px"/></a>
+        <ul class="nav justify-content-end">
+            <li class="nav-item l1">
+                <button type="button" class="btn btn-success"><img src="./Images/squarediwali.jpg" height="20px" width="20px"/>  Diwali Offer</button>
+              </li>
+            <li class="nav-item l2">
+              <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item l3">
+              <a class="nav-link" href="#t3">HOW IT WORKS</a>
+            </li>
+          </ul>
+    </nav>
+    <ul class="navbar1 ">
+        <span>
+        <li><a  href="https://t.me/squareOff_Channel"><img src="./Images/telegram.svg"height="30px"/></a></li>    
+        <li><a  href="https://www.instagram.com/explore/tags/squareoffbots/"><img src="./Images/instagram.svg"height="30px"/></a></li>
+        <li><a  href="https://www.youtube.com/channel/UC_9jH9bMDEhGrju8ewQ1vKg"><img src="./Images/youtube.svg"height="30px"/></a></li>
+        <li><a  href="https://twitter.com/SquareoffIn"><img src="./Images/twitter.svg"height="30px"/></a></li>
+        <li><a  href="https://api.whatsapp.com/send?phone=917550230703&text=Hi"><img src="./Images/whatsapp.svg"height="30px"/></a></li>
+        </span>
+    </ul>
+    <div class="container-m">
+    <div>
+        <a class="r1" href="#">Discover a new way to Trade!</a>
+        <h1 class="r2">Fully Automated</h1>
+        <h1 class="r3">Trading Bots</h1>
+        <p class="r4">We provide end-to-end execution of our in-built strategies.</p>
+        <a class="r5" href="#t1">LOGIN</a>
+        <a class="r5" href="#t2">OPEN DEMAT ACCOUNT</a><br>
+        <a class="r6" href="#">TOP BOTS</a>
+        <img class="r7" id="t1"src="./Images/v6k97gih.png"/>
+        <h1 class="r8">Logon To Our Fully Automated Trading Bots</h1>
+        <pre class="r9">SquareOff provides fully automated Trading Bots that will place trades in 
+            your own Trading Account. Zero Manual Intervention</pre>
+    </div>
+    <div class="card a1">
+        <img src="./Images/aliceblue.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#" class="btn btn-primary b1">LOGIN</a>
+        </div>
+    </div>
+    <div class="card a2">
+        <img src="./Images/paytm.png" height="160" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#" class="btn btn-primary b2">LOGIN</a>
+        </div>
+    </div>
+    <div class="card a3">
+        <img src="./Images/angel.png"height="160" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#" class="btn btn-primary b3">LOGIN</a>
+        </div>
+    </div>
+    <div class="card a4">
+        <img src="./Images/dhan.png"height="160" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#" class="btn btn-primary b4">LOGIN</a>
+        </div>
+    </div>
+    <div class="card a5">
+        <img src="./Images/fyers.png" height="160"class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#" class="btn btn-primary b5">LOGIN</a>
+        </div>
+    </div>
+    <div class="card a6">
+        <img src="./Images/fivepaisa.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#" class="btn btn-primary b6">LOGIN</a>
+        </div>
+    </div>
+    <div class="card a7">
+        <img src="./Images/nuvamawealth.svg"height="160" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#" class="btn btn-primary b7">LOGIN</a>
+        </div>
+    </div>
+    <hr class="n1"><hr class="n1"><hr class="n1">
+    <h1 class="n2">OR</h1>
+    <hr class="n3"><hr class="n3"><hr class="n3">
+    <img class="r10"id="t2"src="./Images/v6k97gih.png"/>
+    <h1 class="r11">Open A DEMAT Account</h1>
+    <pre class="r12">SquareOff provides fully automated Trading Bots that will place trades in 
+        your own Trading Account. Zero Manual Intervention</pre>
+    <div class="card a8" style="width: 12rem;">
+        <img src="./Images/aliceblue.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">ALICEBLUE</h5>
+          <p class="card-text">Open an account through us and get lifetime access to all tradingbots free</p>
+          <a href="#" class="btn btn-primary b8">OPEN ACCOUNT</a>
+        </div>
+      </div>
+      <div class="card a9" style="width: 12rem;">
+        <img src="./Images/dhan.png" height="151px"class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">DHAN</h5>
+          <p class="card-text">Open an account through us and get lifetime access to all tradingbots free</p>
+          <a href="#" class="btn btn-primary b9">OPEN ACCOUNT</a>
+        </div>
+      </div>
+      <div class="card a10" style="width: 12rem;">
+        <img src="./Images/fivepaisa.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">5PAISA</h5>
+          <p class="card-text">Open an account through us and get lifetime access to all tradingbots free</p>
+          <a href="#" class="btn btn-primary b10">OPEN ACCOUNT</a>
+        </div>
+      </div>
+      <div class="card a11" style="width: 12rem;">
+        <img src="./Images/angel.png" height="151px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">ANGEL ONE</h5>
+          <p class="card-text">Open an account through us and get lifetime access to all tradingbots free</p>
+          <a href="#" class="btn btn-primary b11">OPEN ACCOUNT</a>
+        </div>
+      </div>
+      <hr class="n4">
+      <img class="r13"src="./Images/v6k97gih.png"/>
+    <h1 class="r14">Watch Our Demo Video</h1>
+    <pre class="r15">At SquareOff we believe next Generation of Trading has arrived.</pre>
+   <div class="e2"><iframe class="e1" src="https://www.youtube.com/embed/4YtEhcc2i1A?si=r3IuT7OrqFyQ9Utv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+   <div class="card mb-3 c3" style="width:570px; height: 80px;;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="./Images/how1.svg" class="img-fluid rounded-start" alt="...">
+      </div>
+          <h5 class="card-title c1">Bank Nifty Golden Ratio Bot</h5>
+          <pre class="card-text c2">One of best perfrming strategy that works very well during high 
+volatile environment.</pre>
+          </div>
+      </div>
+      <div class="card mb-3 c4" style="width:570px; height: 120px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./Images/how2.svg" class="img-fluid rounded-start" alt="...">
+          </div>
+              <h5 class="card-title c1">Machine Learning Trading Bot</h5>
+              <pre class="card-text c2">Data is the new oil, at Squareoff we firmly believe there are lot 
+of hidden gems if we dig deep with the data.For months we have 
+been working on this machine learning bot to generate a consistent 
+r...</pre>
+              </div>
+          </div>
+          <img class="w1" id="t3"src="./Images/section-icon-2.svg"/>
+          <h1 class="w2">How It Works</h1>
+          <p class="w3">Automate your option trading strategy without any coding.</p>
+          <div class="card mb-3 w4"style="width:350px; height: 500px;">
+            <img src="./Images/pickAStrategy.svg" height="350px;" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pick a Strategy</h5>
+              <p class="card-text">Select from our Diversified List of Strategies,Enter Capital, We will take care of the rest</p>
+            </div>
+          </div>
+          <div class="card mb-3 w5"style="width:350px; height: 450px;">
+            <img src="./Images/free.svg" height="325px;" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Free</h5>
+              <p class="card-text">Take a free trial of the strategies,subscribe only after you are comfortable.Open an account with us, and get access to all our Free Strategies</p>
+            </div>
+          </div>
+          <div class="card mb-3 w6"style="width:350px; height: 400px;">
+            <img src="./Images/RISK.svg" height="300px;" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Risk Management</h5>
+              <p class="card-text">Our bots actively monitor your account to avoid most common execution issues</p>
+            </div>
+          </div>
+          <img class="w7"src="./Images/about11.png"/>
+          <img class="w9"src="./Images/v6k97gih.png"/>
+          <h1 class="w8">Who we are</h1>
+          <pre class="w10">SquareOff provides fully automated Trading Bots that 
+will place all trade entries without any manual 
+intervention in your own TradingAccount based 
+on inbuilt strategies.
+
+Trading strategies built on statistical and mathematical 
+models have historically offered higher returns than 
+their benchmarks and mutual funds.
+            
+We at SquareOff built mathematical & statistical models
+that can provide superior returns and we completely 
+automated it, so the system will place entry, stop loss & 
+targets automatically based on the strategy.</pre>
+        <img class="w11"src="./Images/about12.png"/>
+        <img class="w12"src="./Images/section-icon-2.svg"/>
+        <h1 class="w13">Beat the Market</h1>
+        <pre class="w14">
+Once a customer has sufficient funds to invest, 
+SquareOff proprietary algo would predict when to trade/invest 
+in Markets. Not much manual intervention required from the customer, 
+they can continue with the day job or business while our Algo would
+take care of their investments.
+
+Customers receive the benefits of Algorithm trading while maintaining 
+control of costs, increased security, and complete transparency.</pre>
+        <img class="w15" src="./Images/section-icon-5.svg"/>
+        <h1 class="w16">Frequently Asked Questions</h1>
+        <pre class="w17">Capital | Brokers | Strategies</pre>
+        <img class="w18" src="./Images/faq1.png"/>
+        <div class="w19">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Am Interested to try it out. What should I do?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">We provide 14 days free trial. Just go to<span><a href="https://squareoffbots.com/">https://squareoffbots.com/</a></span>and start your free trial with your existing account that we have associated with. Our bots don’t work with any other broker. If you do not have an account, you can open account using the same link and get life time free access to three trading bots.<b>2 lacs per lot</b> is the minimum capital requirement to trade with any bot.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    What is the cost?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">We provide access to all bots at free of cost for referral users but their max lot size is restrcited to one lot.
+
+                    We charge <b>Rs.30,000/-</b> per year to access all bots who can trade more than one lot.
+                    We provide a 50% discount of this subscription cost to all referral users who opened a broker account under us, where they can subscribe for <b>Rs.15,000/-</b> per year without any lot size restrictions.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    I have opened an account under your referral, whats next step?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Please login to <span><a>www.squareoffbots.com</a></span> and enable trial and try all bots for free for 14 days, once free trial is over, please drop a mail to <span><a href="https://squareoffbots.com/support@squareoff.in">support@squareoff.in</a></span> with your trading id, we shall enable access to free bots for your account. Please refer this video <a href="https://www.youtube.com/watch?v=oJAYd1NgeA8&feature=youtu.be">step-by-step instruction on how to use SQUAREOFF TRADING BOTS</a></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Is it fully automated ?
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Yes, our platform places entry orders and stop loss orders/target orders automatically as per the strategy. No manual intervention required. By day end around 3:10 pm, before cut off time, bots would square-off these positions automatically.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Can I trade my own strategy?
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">No, Trading bots platform comes with inbuilt strategy. Doesnt support any customised strategy. However, you can automate your own strategy using our free platform <a href="http://optionx.in/">http://optionx.in/</a></div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    What's the risk involved?
+                  </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">The risk is based on the individual bots, all cash segment bots follows risk per trade based on its own strategy rules and all option selling bots follows fixed SL of 25% and futures bot follows SL 0f 0.5% from entry price. Maximum drawdown varies from strategy to strategy.</div>
+                </div>
+            </div>
+          </div>
+          </div>
+          <a class="r16" href="#">VIEW MORE</a>
+          <footer class="w38">
+            <h5>Find Us On</h5>
+            <pre >SquareOff provides fully automated Trading Bots that
+will place all trade entries without any manual intervention
+in your own Trading Account based on inbuilt strategies.</pre>
+            <div class="w3-xlarge w3-padding-16 ">
+              <i class="fa fa-facebook-official w3-hover-opacity"></i>
+              <i class="fa fa-instagram w3-hover-opacity"></i>
+              <i class="fa fa-snapchat w3-hover-opacity"></i>
+              <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+              <i class="fa fa-twitter w3-hover-opacity"></i>
+              <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </div>
+            <ul class="w39">
+                <li class="w40">Navigate</li>
+                <li>Training</li>
+
+                <li> Blogs</li>
+                    
+                <li> FAQ</li>
+                    
+                <li>Contact</li>
+            </ul>
+            <ul class="w41">
+                <li class="w42">CONTACT US</li>
+                <li><pre>Address: No:333, 1st Floor, Thiruvallur Road, 
+Panneer Nagar, Mogappair East,
+Chennai- 600037,Tamil Nadu</pre></li>
+
+                <li>Mail: support@squareoff.in</li>
+                                            
+           
+            </ul>
+        </footer>
+        </div>
+        </body>
+</html>
